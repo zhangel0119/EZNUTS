@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>EZLEGEND</title>
+    <style>
+    body {
+        color:red;
+        font-size: 110px;
+        font-family: DejaVu Serif;
+    }
+    div{
+        color:blueviolet;
+        font-size: 160px;
+        font-family: Wide Latin;
+}
+</style>
+</head>
+
+<body>
+    <canvas id="myCanvas"></canvas>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas")
+        var c = document.getElementById("myCanvas")
+        var ctx = c.getContext("2d");
+
+        var x = 0
+        var y = 0
+        function ball() {
+            x = x + 10
+            y = y + 10
+            ctx.beginPath();
+            ctx.arc(x,y,20,0,2*Math.PI);
+            ctx.stroke(); 
+            requestAnimationFrame(ball)
+        }
+
+        ball();
+    </script>
+EZLEGEND! EZLEGACY! EZSAUCE!
+<div>
+    EZNUTS!
+</div>
+</body>
+
+</html>
